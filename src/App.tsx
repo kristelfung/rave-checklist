@@ -55,7 +55,7 @@ const App = () => {
   ];
 
   const handleActivityToggle =
-    (isPositive: number) => (event: ChangeEvent<HTMLInputElement>) => {
+    (isPositive: boolean) => (event: ChangeEvent<HTMLInputElement>) => {
       const change = isPositive ? 1 : -1;
       setPoints(points + (event.target.checked ? change : -change));
     };
